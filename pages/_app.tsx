@@ -1,12 +1,12 @@
 import type { AppProps } from "next/app";
-import Chakra from "../styles/chakra";
+import { ChakraProvider } from "@chakra-ui/react";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   return (
-    <Chakra cookies={pageProps.cookies}>
+    <ChakraProvider>
       <Component {...pageProps} />
-    </Chakra>
+    </ChakraProvider>
   );
 }
 
-export default MyApp;
+export default App;
