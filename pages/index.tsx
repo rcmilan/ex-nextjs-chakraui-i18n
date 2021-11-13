@@ -1,3 +1,4 @@
+import React from "react";
 import type { NextPage } from "next";
 import {
   Button,
@@ -8,6 +9,7 @@ import {
   Text,
   useBreakpointValue,
 } from "@chakra-ui/react";
+import ToogleThemeComponent from "../components/ToogleThemeComponent";
 
 const Home: NextPage = () => {
   return (
@@ -52,6 +54,7 @@ const Home: NextPage = () => {
               Create Project
             </Button>
             <Button rounded={"full"}>How It Works</Button>
+            <ToogleThemeComponent />
           </Stack>
         </Stack>
       </Flex>

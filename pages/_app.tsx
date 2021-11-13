@@ -1,12 +1,11 @@
 import type { AppProps } from "next/app";
-// import { theme } from "../styles/theme";
-import { ChakraProvider } from "@chakra-ui/react";
+import Chakra from "../styles/chakra";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider>
+    <Chakra cookies={pageProps.cookies}>
       <Component {...pageProps} />
-    </ChakraProvider>
+    </Chakra>
   );
 }
 
