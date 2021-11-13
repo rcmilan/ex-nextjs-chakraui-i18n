@@ -13,8 +13,9 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
+import type { NextPage } from "next";
 
-const Login: React.FC = () => {
+const Login: NextPage = () => {
   return (
     <Box position={"relative"}>
       <Container
